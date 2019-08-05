@@ -1,2 +1,29 @@
-# watchAndDeploy
-A tool use to auto upload changed file to sftp server.
+# watch and deploy
+
+## 它能做什么
+监控文件夹变化并使用sftp上传
+
+## 为什么要使用 node 监控并上传
+ - webstorm 的上传文件功能基于项目，每个需要上传文件的项目都要配一遍
+ - 当使用 webstorm 的 watch file 插件，webstorm 并不能检测到插件修改后的文件并上传
+
+## 你将获得什么
+ - 任何目录的监控并且自动上传到服务器对应目录 (只支持 win & mac)
+ - 自定义监控文件的筛选和剔除规则
+ - 断线重连，并在连接成功后继续上传
+ - 断线时依旧会监控并添加任务队列
+ 
+##使用
+配置 config.js 文件
+ - yarn
+ - yarn start
+
+##建议
+本工具只会做增量上传  
+未同步过的文件夹可以使用 git 或 free file sync 先同步一次
+
+## TODO
+ - 支持私钥认证
+ - 重试时间自动拉长
+ - 将队列保存到文件中，执行时加载
+ - 偶现文件监控不到

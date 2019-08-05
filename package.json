@@ -1,0 +1,21 @@
+{
+  "name": "watchanddeploy",
+  "version": "1.0.0",
+  "description": "A tool use to auto upload changed file to sftp server.",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/"
+  },
+  "author": "chenyong <chenyong.heyo@bytedance.com>",
+  "license": "MIT",
+  "dependencies": {
+    "nsfw": "^1.2.5",
+    "concat-stream": "^2.0.0",
+    "ssh2": "^0.8.2"
+  },
+  "devDependencies": {
+    "@types/node": "^11.13.0",
+    "nodemon": "^1.18.10",
+    "typescript": "^3.4.1"
+  }
+}
