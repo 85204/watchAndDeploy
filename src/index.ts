@@ -5,23 +5,14 @@ import { handleUpload } from "./handleUpload";
 const nsfw = require("nsfw");
 const {
   localPath,
-  exclude,
-  host,
-  include = [""],
-  password,
-  port,
   remotePath,
-  username
+  exclude,
+  include = [""],
+  ...sftpOptions
 } = require("../config").default;
 
-const option = {
-  host,
-  port,
-  username,
-  password
-};
 const line = new Line();
-const client = new SftpClient(option);
+const client = new SftpClient(sftpOptions);
 const { sftp, ready, end, setRetryFn } = client;
 
 setRetryFn(line.retry);
