@@ -3,6 +3,10 @@ exports.default = {
   port: "22",
   username: "username",
   password: "password",
+  /**
+   * see https://github.com/theophilusx/ssh2-sftp-client#connectconfig--sftpstream
+   * check other support options
+   */
   localPath: "/Users",
   remotePath: "/data00/home",
   /**
