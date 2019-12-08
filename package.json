@@ -10,8 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "nsfw": "^1.2.5",
-    "concat-stream": "^2.0.0",
-    "ssh2": "^0.8.2"
+    "ssh2-sftp-client": "^4.3.0"
   },
   "devDependencies": {
     "@types/node": "^11.13.0",

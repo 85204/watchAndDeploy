@@ -1,5 +1,5 @@
 exports.default = {
-  host: "10.224.6.232",
+  host: "10.0.0.1",
   port: "22",
   username: "username",
   password: "password",

@@ -1,5 +1,5 @@
 // @ts-ignore
-import Client from "../lib/ssh2-sftp-client/src";
+import Client from "ssh2-sftp-client";
 
 enum Type {
   ERROR,
