@@ -144,8 +144,12 @@ export const handleUpload = ({
 };
 
 async function isDirExist(sftp: any, path: string) {
-  try {
+  if (path) {
     console.log('detect path:', path);
+  } else {
+    throw new Error('detected path is undefined.');
+  }
+  try {
     return await sftp.list(path);
   } catch (e) {
     // console.warn(e);
