@@ -9,8 +9,8 @@
   "author": "chenyong <chenyong.heyo@bytedance.com>",
   "license": "MIT",
   "dependencies": {
-    "nsfw": "^1.2.5",
-    "ssh2-sftp-client": "^4.3.0"
+    "nsfw": "^2.0.0",
+    "ssh2-sftp-client": "^5.1.2"
   },
   "devDependencies": {
     "@types/node": "^11.13.0",

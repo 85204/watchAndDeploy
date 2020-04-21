@@ -19,7 +19,8 @@ setRetryFn(line.retry);
 
 line.setBeforeWork(ready);
 line.setAfterWork(end);
-process.on("warning", e => console.warn(e.stack));
+process.addListener("warning", e => console.warn(e.stack));
+process.addListener('uncaughtException', e => console.warn(e.stack));
 
 const commonExclude = require("./commonExclude").default;
 const realExclude: Rule[] = [...commonExclude, ...exclude];
